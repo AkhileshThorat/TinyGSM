@@ -246,7 +246,7 @@ void loop() {
   uint8_t chargeState = -99;
   int8_t percent = -99;
   uint16_t milliVolts = -9999;
-  modem.getBattStats(chargeState, percent, milliVolts)
+  modem.getBattStats(chargeState, percent, milliVolts);
   DBG("Battery charge state:", chargeState);
   DBG("Battery charge 'percent':", percent);
   DBG("Battery voltage:", milliVolts / 1000.0F);
